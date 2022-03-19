@@ -12,5 +12,8 @@
   "dependencies": {
     "date-format": "^4.0.5",
     "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0"
   }
 }

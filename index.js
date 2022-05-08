@@ -1,16 +1,13 @@
-const date=require('date-format');
+//Promise=>resolve//
 
-const time= date.asString('hh:mm:ss.SSS', new Date());
+const p=new Promise((resolve,reject)=>{
+  resolve("Promise will be fullfilled")
 
-console.log(time);
+})
 
-
-//Semantic Versioning
-
-//Major.Minor.Patch=>Semantic Versioning
-
-//1.0.0=>1.0.1=>1.0.2=>1.0.3=>Patch(Bug Fix)
-
-//1.1.0=>1.2.0=>1.3.0=>Minor(Feature Add )
-
-//2.0.0=>3.0.0=>4.0.0=>Major(Feature Remove or Structure Changed)
+p.then((result)=>{
+  console.log(result);
+})
+.catch((err)=>{
+  console.log(err)
+})

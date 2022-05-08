@@ -1,8 +1,12 @@
 //Promise=>resolve//
 
 const p=new Promise((resolve,reject)=>{
-  //resolve("Promise will be fullfilled")
-  reject('Promise will be failure');
+ 
+  setTimeout(()=>{
+    resolve("Promise will be fullfilled")
+
+  },5000)
+   //reject('Promise will be failure');
 
 })
 
@@ -12,3 +16,5 @@ p.then((result)=>{
 .catch((err)=>{
   console.log(err)
 })
+
+console.log('After');
